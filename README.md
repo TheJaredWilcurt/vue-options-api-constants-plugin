@@ -1,2 +1,55 @@
-# vue-options-api-constants-plugin
+# Vue Options API Constants Plugin
+
 Adds a constants section to your Options API components.
+
+
+## Use
+
+1. `npm install --save vue-options-api-constants-plugin`
+1. Import the plugin into your `main.js` and then `app.use` it, like so:
+    ```js
+    import { createApp } from 'vue';
+    import constantsPlugin from 'vue-options-api-constants-plugin';
+    
+    const app = createApp({});
+    app.use(constantsPlugin);
+    app.mount('#app');
+    ```
+1. In any of your Options API components, you can now add a top level `constants` object, like so:
+    ```html
+    <template>
+      <div>
+        {{ BRAND_NAME }}
+      </div>
+    </template>
+
+    <script>
+    import { BRAND_NAME } from './constants.js';
+
+    export default {
+      name: 'AnExample',
+      data: function () {
+        return {};
+      },
+      constants: {
+        BRAND_NAME
+      },
+      methods: {},
+      computed: {},
+      created: function () {}
+    };
+    </script>
+    ```
+
+
+## Benefits
+
+* The constants are frozen as computed properties under the hood, so you cannot mutate them, and if you attempt, you'll get a warning in the console.
+* Gives you separation of concerns and code organization by having a place for all constants to live in each component.
+* You could put them in the `data` section, however then they would reactive and mutatable, which is not their intent.
+* You could put them in the `computed` section, but then you'd have a lot of boilerplate, that this is abstracting away for you.
+
+
+## Downsides
+
+* This is a plugin, so by definition it is non-standard. However, there is nothing I cna do about that as Vue's core team (*read: Evan*) does not want this feature in Vue itself, despite it being a very common need. Perhaps, if this plugin becomes popular (tell your friends), then it would be more likely to be officially added into Vue.

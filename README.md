@@ -46,8 +46,9 @@ Adds a constants section to your Options API components.
 
 * The constants are frozen as computed properties under the hood, so you cannot mutate them, and if you attempt, you'll get a warning in the console.
 * Gives you separation of concerns and code organization by having a place for all constants to live in each component.
-* You could put them in the `data` section, however then they would reactive and mutatable, which is not their intent.
+* You could return them in the `data` section, however then they would be reactive and mutatable, which is not good for constants.
 * You could put them in the `computed` section, but then you'd have a lot of boilerplate, that this is abstracting away for you.
+* You could return them in the `setup` section, but that too would make them reactive and mutable.
 
 
 ## Downsides

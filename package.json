@@ -1,0 +1,36 @@
+{
+  "name": "vue-options-api-constants-plugin",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Adds a constants section to your Options API components.",
+  "main": "umd.js",
+  "module": "index.js",
+  "files": [
+    "cdn.js",
+    "index.js",
+    "umd.js"
+  ],
+  "exports": {
+    ".": {
+      "import": "index.js",
+      "require": "umd.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJaredWilcurt/vue-options-api-constants-plugin.git"
+  },
+  "keywords": [
+    "vue",
+    "options",
+    "api",
+    "constants",
+    "plugin"
+  ],
+  "author": "TheJaredWilcurt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheJaredWilcurt/vue-options-api-constants-plugin/issues"
+  },
+  "homepage": "https://github.com/TheJaredWilcurt/vue-options-api-constants-plugin#readme"
+}

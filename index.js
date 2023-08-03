@@ -13,10 +13,10 @@ export default {
     app.mixin({
       // Creates a lifecycle hook in each component
       beforeCreate: function () {
-        // Checks if the component is using the Options API and a constants section exists
+        // Checks if the component is using the Options API and has a constants section
         const constants = this.$options.constants;
         if (constants) {
-          // Loops over the constants creating a computed property for each
+          // Loop over the constants creating a computed property for each
           const computeds = {};
           Object.keys(constants).forEach(function (constantKey) {
             computeds[constantKey] = function () {
@@ -24,13 +24,13 @@ export default {
               return Object.freeze(constants[constantKey]);
             };
           });
-          // Add the computed constatns to the computed properties in the current component
+          // Add the computed constants to the computed properties in the current component
           this.$options.computed = {
             ...this.$options.computed,
             ...computeds
           };
         }
-      },
+      }
     });
-  },
+  }
 };

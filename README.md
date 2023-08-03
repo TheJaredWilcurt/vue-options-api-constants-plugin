@@ -77,5 +77,5 @@ Adds a constants section to your Options API components.
 
 ## Downsides
 
-* This is a plugin, so by definition it is non-standard. However, there is nothing I cna do about that as Vue's core team (*read: Evan*) does not want this feature in Vue itself, despite it being a very common need. Perhaps, if this plugin becomes popular (tell your friends), then it would be more likely to be officially added into Vue.
 * Ctrl+Click from the template to the defintion doesn't work with Intellisense/VSCode. However, this may be fixable with some editor hints, as other tools, like Vuelidate and Pinia don't have this issue. If you know how to fix this, create a PR.
+* This is a plugin, so by definition it is non-standard. However, there is nothing I can do about that as Vue's core team (*read: Evan*) does not want this feature in Vue itself, despite it being a very common need. Perhaps, if this plugin becomes popular (*tell your friends*), then it would be more likely to be officially added into Vue.

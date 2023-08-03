@@ -35,6 +35,36 @@ Adds a constants section to your Options API components.
     </script>
     ```
 
+## Use via CDN
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/vue-options-api-constants-plugin@1.0.0/cdn.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ AN_EXAMPLE }}
+    </div>
+    <script>
+      const AN_EXAMPLE = 'An example';
+
+      const app = Vue.createApp({
+        constants: {
+          AN_EXAMPLE
+        }
+      });
+      app.use(window.constantsPlugin);
+      app.mount('#app');
+    </script>
+  </body>
+</html>
+```
+* [JSFiddle Example](https://jsfiddle.net/wLcj1zb7/)
+
 
 ## Benefits
 

@@ -70,9 +70,13 @@ Adds a constants section to your Options API components.
 
 * The constants are frozen as computed properties under the hood, so you cannot mutate them, and if you attempt, you'll get a warning in the console.
 * Gives you separation of concerns and code organization by having a place for all constants to live in each component.
-* You could return them in the `data` section, however then they would be reactive and mutatable, which is not good for constants.
-* You could put them in the `computed` section, but then you'd have a lot of boilerplate, that this is abstracting away for you.
-* You could return them in the `setup` section, but that too would make them reactive and mutable.
+
+
+### Why not use `data`, `setup`, `computed` or `methods`?
+
+* `data` and `setup` sections would create reactive and mutatable variable, which you don't want for your constants.
+* `computed` section works, but adds a lot of boilerplate that this plugin is abstracting away for you.
+* `methods` section would have the same boilerplate as the computed, and additional boilerplate in the template (`{{ AN_EXAMPLE() }}`) and in the scripts (`this.AN_EXAMPLE()`)
 
 
 ## Downsides

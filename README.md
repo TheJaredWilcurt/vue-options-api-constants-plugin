@@ -28,15 +28,9 @@ Adds a constants section to your Options API components.
 
     export default {
       name: 'AnExample',
-      data: function () {
-        return {};
-      },
       constants: {
         BRAND_NAME
-      },
-      methods: {},
-      computed: {},
-      created: function () {}
+      }
     };
     </script>
     ```

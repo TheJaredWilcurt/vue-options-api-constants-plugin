@@ -74,7 +74,7 @@ Adds a constants section to your Options API components.
 
 ### Why not use `data`, `setup`, `computed` or `methods`?
 
-* `data` and `setup` sections would create reactive and mutatable variable, which you don't want for your constants.
+* `data` and `setup` sections would create reactive and mutatable variables, which you don't want for your constants.
 * `computed` section works, but adds a lot of boilerplate that this plugin is abstracting away for you.
 * `methods` section would have the same boilerplate as the computed, and additional boilerplate in the template (`{{ AN_EXAMPLE() }}`) and in the scripts (`this.AN_EXAMPLE()`)
 

@@ -1,9 +1,14 @@
 // This file exists to allow using this plugin in a CDN style website/app directly in the browser
+
+/**
+ * The Vue Constants Plugin which allows adding a constants section to an Options API component.
+ * @type {object}
+ */
 window.constantsPlugin = {
   /**
    * Vue Plugin install function, called by Vue.js. Installs the Constants plugin.
    *
-   * @param  {Object} app  The Vue app instance.
+   * @param {import("@vue/runtime-core/dist/runtime-core.d").App} app  The Vue app instance.
    */
   install: function (app) {
     // Creates a global mixin applied to every component in the app

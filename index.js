@@ -6,7 +6,7 @@ export default {
   /**
    * Vue Plugin install function, called by Vue.js. Installs the Constants plugin.
    *
-   * @param  {Object} app  The Vue app instance.
+   * @param {import("@vue/runtime-core/dist/runtime-core.d").App} app  The Vue app instance.
    */
   install: function (app) {
     // Creates a global mixin applied to every component in the app

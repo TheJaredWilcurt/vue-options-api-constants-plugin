@@ -1,6 +1,8 @@
 # Vue Options API Constants Plugin
 
-Adds a constants section to your Options API components.
+## Adds a constants section to your Options API components.
+
+Under the hood the constants values are frozen (`Object.freeze()`) and returned as cached computed properties, accessible in the template.
 
 
 ## Use

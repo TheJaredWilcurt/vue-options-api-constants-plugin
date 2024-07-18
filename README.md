@@ -84,4 +84,3 @@ Under the hood the constants values are frozen (`Object.freeze()`) and returned 
 ## Downsides
 
 * Ctrl+Click from the template to the defintion doesn't work with Intellisense/VSCode. However, this may be fixable with some editor hints, as other tools, like Vuelidate and Pinia don't have this issue. If you know how to fix this, create a PR.
-* This is a plugin, so by definition it is non-standard. Perhaps, if this plugin becomes popular (*tell your friends*), then this functionality could be officially built into Vue.

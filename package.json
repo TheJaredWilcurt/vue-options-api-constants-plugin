@@ -1,7 +1,7 @@
 {
   "name": "vue-options-api-constants-plugin",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds a constants section to your Options API components.",
   "main": "./umd.js",
   "module": "index.js",

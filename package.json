@@ -12,8 +12,8 @@
   ],
   "exports": {
     ".": {
-      "import": "index.js",
-      "require": "umd.cjs"
+      "import": "./index.js",
+      "require": "./umd.cjs"
     }
   },
   "repository": {
